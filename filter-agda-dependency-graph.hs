@@ -115,7 +115,7 @@ processGraph srcpath dotgraph@DotGraph {graphStatements} = do
 
   -- color encoding
   let encodeColor color colors =
-        Color [WC (BrewerColor (BC (BScheme Accent colors) color)) Nothing]
+        Color [WC (BrewerColor (BC (BScheme Accent (colors + 2)) (color + 1))) Nothing]
 
   -- color-code the module prefix
   let
